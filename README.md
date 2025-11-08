@@ -64,22 +64,23 @@ This project reflects a real-world e-commerce workflow, focusing on data handlin
 
 ## Setup Instructions
 
-Follow these steps to run the project locally.
+To start both backend and frontend servers locally:
 
 ---
 
-### 1. Run the Backend
+### 1. Start the Backend
 
-1. Open a terminal and navigate to the backend folder:
-   ```bash
-   cd backend
-   npm install
-   npm run dev
-   ```
-2.. Open a terminal and navigate to the frontend folder:
-   ```bash
-   cd frontend
-   npm run dev
-   ```
+```bash
+cd backend
+npm install
+npm run dev
+```
+### 2. Start the Frontend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
 
 
