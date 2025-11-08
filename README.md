@@ -39,13 +39,15 @@ This project reflects a real-world e-commerce workflow, focusing on data handlin
 ---
 
 ## Project Structure
+
+```
 /backend
   server.js          # Express routes (products, cart, checkout)
   db.js              # SQLite schema and queries
   package.json
   database.sqlite    # Local DB (auto-created, ignored by Git)
 
-/frontend
+ /frontend
   src/
     App.jsx
     api.js
@@ -59,4 +61,5 @@ This project reflects a real-world e-commerce workflow, focusing on data handlin
 
 README.md
 .gitignore
+```
 
