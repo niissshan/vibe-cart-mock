@@ -1,20 +1,72 @@
-﻿# Node / Vite
-node_modules/
-dist/
-build/
-.vite/
-.cache/
+# -------------------------
+# Logs
+# -------------------------
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Env & OS
+# -------------------------
+# Node / Build Artifacts
+# -------------------------
+node_modules/
+dist/
+build/
+.cache/
+.tmp/
+.temp/
+.pnpm-store/
+
+# -------------------------
+# Vite
+# -------------------------
+.vite/
+vite.svg
+
+# -------------------------
+# Test / Coverage
+# -------------------------
+coverage/
+.nyc_output/
+
+# -------------------------
+# Environment files
+# (keep example for docs)
+# -------------------------
 .env
 .env.*
+!.env.example
+
+# -------------------------
+# OS-specific junk
+# -------------------------
 .DS_Store
 Thumbs.db
 
-# SQLite DBs
+# -------------------------
+# Editors / IDEs
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------------
+# TypeScript (if used)
+# -------------------------
+*.tsbuildinfo
+
+# -------------------------
+# SQLite databases (local only)
+# -------------------------
 backend/database.sqlite
 backend/database.sqlite-journal
+backend/*.db
+backend/*.db-journal
+
+# -------------------------
+# Misc
+# -------------------------
+*.local
