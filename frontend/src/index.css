@@ -1,0 +1,73 @@
+/* Import Tailwind layers */
+@import "tailwindcss";
+
+/* Optional global tweaks */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #f8fafc);
+  color: #1e293b; /* slate-800 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App container */
+.app {
+  max-width: 90rem; /* ~1440px */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Product grid */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Hide scrollbars in cart drawer */
+.cart-panel::-webkit-scrollbar {
+  display: none;
+}
+.cart-panel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Modal animations */
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);   opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Animation utility classes */
+.animate-slideIn { animation: slideIn 0.3s ease-out forwards; }
+.animate-fadeIn  { animation: fadeIn  0.3s ease-out forwards; }
+
+/* Receipt modal polish */
+.receipt-modal {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+/* Optional: smoother link hover transitions */
+a { transition: color 0.15s ease, background-color 0.15s ease; }
