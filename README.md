@@ -83,4 +83,21 @@ npm install
 npm run dev
 ```
 
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---------|-----------|-------------|
+| **GET** | `/api/products` | Fetch all available products |
+| **POST** | `/api/cart` | Add a product `{ productId, qty }` (increments if already in cart) |
+| **DELETE** | `/api/cart/:id` | Remove a specific product from the cart |
+| **GET** | `/api/cart` | Retrieve cart items and total |
+| **POST** | `/api/checkout` | Complete checkout `{ name, email }` and return a receipt |
+
+Each of these endpoints can be tested using Postman, curl, or directly from the frontend.
+
+---
+
+
 
