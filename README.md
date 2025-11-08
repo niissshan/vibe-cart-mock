@@ -59,7 +59,6 @@ This project reflects a real-world e-commerce workflow, focusing on data handlin
   package.json
   vite.config.js
 
-README.md
-.gitignore
+
 ```
 
