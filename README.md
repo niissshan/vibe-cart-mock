@@ -40,20 +40,23 @@ This project reflects a real-world e-commerce workflow, focusing on data handlin
 
 ## Project Structure
 /backend
-server.js # Express routes (products, cart, checkout)
-db.js # SQLite schema and queries
-package.json
-database.sqlite # Local DB (auto-created, ignored by Git)
+  server.js          # Express routes (products, cart, checkout)
+  db.js              # SQLite schema and queries
+  package.json
+  database.sqlite    # Local DB (auto-created, ignored by Git)
 
 /frontend
-src/
-App.jsx
-api.js
-index.css
-components/
-ProductsGrid.jsx
-CartPanel.jsx
-ReceiptModal.jsx
-package.json
-vite.config.js
+  src/
+    App.jsx
+    api.js
+    index.css
+    components/
+      ProductsGrid.jsx
+      CartPanel.jsx
+      ReceiptModal.jsx
+  package.json
+  vite.config.js
+
+README.md
+.gitignore
 
